@@ -10,7 +10,7 @@ app,rt = fh.fast_app(
 
 @rt('/')
 def get(): 
-    return fh.Div(fh.P('Hello from FastHTML on AWS Lambda!'))
+    return fh.Titled("FastHTML", fh.Div(fh.P('Hello from FastHTML on AWS Lambda!')))
 
 
 fh.serve()
